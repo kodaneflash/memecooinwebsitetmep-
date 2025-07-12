@@ -6,10 +6,10 @@ const HowToBuy = () => {
   return (
     <div id="buy" className="max-w-[85rem] mx-auto p-12">
       <div className="my-16">
-        <h2 className="font-stopbuck text-6xl text-duis text-shadow text-center">
+        <h2 className="font-stopbuck text-6xl bg-cosmic-gradient bg-clip-text text-transparent text-center">
           How To Buy
         </h2>
-        <h3 className="font-stopbuck text-2xl text-center text-black">
+        <h3 className="font-stopbuck text-2xl text-center text-white">
           {`Just 4️⃣ steps to get rich 🤑`}
         </h3>
       </div>
@@ -20,12 +20,12 @@ const HowToBuy = () => {
             <a
               href="https://phantom.app"
               target="_blank"
-              className="uppercase font-extrabold text-[#ab9ff2] text-2xl"
+              className="uppercase font-extrabold text-cosmic-purple text-2xl hover:text-cosmic-pink transition-colors"
             >
               phantom
             </a>{" "}
             or your{" "}
-            <span className="bg-gradient-to-r from-[#9945FF] to-[#14F195] inline-block text-transparent bg-clip-text uppercase font-extrabold text-2xl">
+            <span className="bg-cosmic-gradient inline-block text-transparent bg-clip-text uppercase font-extrabold text-2xl">
               Solana
             </span>{" "}
             wallet of choice and follow the simple steps to create a new
@@ -34,15 +34,15 @@ const HowToBuy = () => {
         </OrderCard>
         <OrderCard order={2} title={"connect to dex"} style={"-rotate-6"}>
           <span>
-            If you don’t have any{" "}
-            <span className="bg-gradient-to-r from-[#9945FF] to-[#14F195] inline-block text-transparent bg-clip-text uppercase font-extrabold text-2xl">
+            If you don&apos;t have any{" "}
+            <span className="bg-cosmic-cyan-gradient inline-block text-transparent bg-clip-text uppercase font-extrabold text-2xl">
               $SOL
             </span>
             , you can buy directly on{" "}
             <a
               href="https://phantom.app"
               target="_blank"
-              className="uppercase font-extrabold text-[#ab9ff2] text-2xl"
+              className="uppercase font-extrabold text-cosmic-purple text-2xl hover:text-cosmic-coral transition-colors"
             >
               phantom
             </a>{" "}
@@ -53,18 +53,18 @@ const HowToBuy = () => {
         <OrderCard order={3} title={"swap $Sol for $duis"} style={"-rotate-1"}>
           <span>
             Paste the token address (CA) into wallet and swap{" "}
-            <span className="bg-gradient-to-r from-[#9945FF] to-[#14F195] inline-block text-transparent bg-clip-text uppercase font-extrabold text-2xl">
+            <span className="bg-cosmic-cyan-gradient inline-block text-transparent bg-clip-text uppercase font-extrabold text-2xl">
               $SOL
             </span>{" "}
-            for <span className="font-extrabold text-2xl text-duis">$DUIS</span>
-            .{`There's zero taxes so you don’t need to worry.`}
+            for <span className="font-extrabold text-2xl text-cosmic-pink">$DUIS</span>
+            .{`There are zero taxes so you do not need to worry.`}
           </span>
         </OrderCard>
-        <OrderCard order={4} title={"you're duis-dawg!‍"} style={"rotate-2"}>
+        <OrderCard order={4} title={"you are a cosmic jiggler!‍"} style={"rotate-2"}>
           <span>
             Welcome to the <br />
-            <span className="uppercase font-extrabold text-2xl underline decoration-duis">
-              Duis family
+            <span className="uppercase font-extrabold text-2xl underline decoration-cosmic-coral">
+              JIAT galaxy
             </span>
             !
           </span>

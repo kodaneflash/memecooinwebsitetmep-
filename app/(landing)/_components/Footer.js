@@ -35,19 +35,19 @@ const Footer = () => {
             <div>
               <Image
                 className=""
-                src="/collection/1.png"
+                src="https://placehold.co/200x200"
                 width={200}
                 height={200}
-                alt="dui 1"
+                alt="placeholder 1"
               />
             </div>
             <div>
               <Image
                 className=""
-                src="/collection/2.png"
+                src="https://placehold.co/200x200"
                 width={200}
                 height={200}
-                alt="dui 2"
+                alt="placeholder 2"
               />
             </div>
           </div>
@@ -55,19 +55,19 @@ const Footer = () => {
             <div>
               <Image
                 className=""
-                src="/collection/4.png"
+                src="https://placehold.co/200x200"
                 width={200}
                 height={200}
-                alt="dui 4"
+                alt="placeholder 4"
               />
             </div>
             <div>
               <Image
                 className=""
-                src="/collection/3.png"
+                src="https://placehold.co/200x200"
                 width={200}
                 height={200}
-                alt="dui 3"
+                alt="placeholder 3"
               />
             </div>
           </div>

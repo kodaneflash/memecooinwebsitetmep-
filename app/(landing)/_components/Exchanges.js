@@ -21,7 +21,7 @@ const Exchanges = () => {
         <h2 className="font-stopbuck text-6xl text-duis text-shadow text-center">
           Exchanges
         </h2>
-        <h3 className="font-stopbuck text-2xl text-center text-black">
+        <h3 className="font-stopbuck text-2xl text-center text-white">
           probably nothing 🤔
         </h3>
       </div>

@@ -1,83 +1,56 @@
-import Image from "next/image";
-
-import Header from "./_components/Header";
+import React from "react";
 import Nav from "./_components/Nav";
 import Hero from "./_components/Hero";
 import About from "./_components/About";
-import Tokenomics from "./_components/Tokenomics";
 import Exchanges from "./_components/Exchanges";
+import Tokenomics from "./_components/Tokenomics";
 import HowToBuy from "./_components/HowToBuy";
 import WallOfLove from "./_components/WallOfLove";
 import Footer from "./_components/Footer";
+import Socials from "./_components/Socials";
 
-export default function Home() {
+const LandingPage = () => {
   return (
-    <>
-      <Header>
-        <Nav />
-      </Header>
+    <div>
+      <Nav />
       <Hero />
-      <div className="bg-[#e4e0e1]">
-        <About />
-        <Exchanges />
-        <div className="max-w-[85rem] mx-auto mt-24">
-          <span className="flex items-center">
-            <span className="h-[3px] flex-1 bg-duis"></span>
-            <div>
-              <Image
-                className=""
-                src="/collection/5.png"
-                width={300}
-                height={300}
-                alt="dui-5"
-              />
-            </div>
-            <span className="h-[3px] flex-1 bg-duis"></span>
-          </span>
-        </div>
+      <About />
 
-        <Tokenomics />
-        <div className="max-w-[85rem] mx-auto mt-24">
-          <span className="flex items-center">
-            <span className="h-[3px] flex-1 bg-duis"></span>
-            <div>
-              <Image
-                className=""
-                src="/collection/7.png"
-                width={300}
-                height={300}
-                alt="dui-7"
-              />
-            </div>
-            <span className="h-[3px] flex-1 bg-duis"></span>
-          </span>
-        </div>
-
-        <HowToBuy />
-        <div className="text-center">
-          <div className="flex justify-center">
-            <Image
-              className="hidden md:block"
-              src="/collection/6.png"
-              width={300}
-              height={300}
-              alt="dui-6"
-            />
-            <Image
-              className=""
-              src="/collection/8.png"
-              width={300}
-              height={300}
-              alt="dui-8"
-            />
-          </div>
-          <div className="mt-5">
-            <p className="font-stopbuck text-2xl text-black">Woof! Woof!</p>
-          </div>
-        </div>
-        {/* <WallOfLove /> */}
-        <Footer />
+      <div className="max-w-[85rem] mx-auto px-4 py-10 sm:py-14 flex items-center">
+        <span className="h-[3px] flex-1 bg-cosmic-pink"></span>
+        <span className="px-6 text-4xl">🎯</span>
+        <span className="h-[3px] flex-1 bg-cosmic-coral"></span>
       </div>
-    </>
+
+      <Exchanges />
+
+      <div className="max-w-[85rem] mx-auto px-4 py-10 sm:py-14 flex items-center">
+        <span className="h-[3px] flex-1 bg-cosmic-coral"></span>
+        <span className="px-6 text-4xl">🔥</span>
+        <span className="h-[3px] flex-1 bg-cosmic-cyan"></span>
+      </div>
+
+      <Tokenomics />
+
+      <div className="max-w-[85rem] mx-auto px-4 py-10 sm:py-14 flex items-center">
+        <span className="h-[3px] flex-1 bg-cosmic-cyan"></span>
+        <span className="px-6 text-4xl">🚀</span>
+        <span className="h-[3px] flex-1 bg-cosmic-pink"></span>
+      </div>
+
+      <HowToBuy />
+
+      <div className="max-w-[85rem] mx-auto px-4 py-10 sm:py-14 flex items-center">
+        <span className="h-[3px] flex-1 bg-cosmic-pink"></span>
+        <span className="px-6 text-4xl">⭐</span>
+        <span className="h-[3px] flex-1 bg-cosmic-coral"></span>
+      </div>
+
+      <Socials />
+
+      <Footer />
+    </div>
   );
-}
+};
+
+export default LandingPage;

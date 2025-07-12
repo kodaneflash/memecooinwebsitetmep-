@@ -31,7 +31,7 @@ const Tokenomics = () => {
         <h2 className="font-stopbuck text-6xl text-duis text-shadow text-center">
           Tokenomics
         </h2>
-        <h3 className="font-stopbuck text-2xl text-center text-black">
+        <h3 className="font-stopbuck text-2xl text-center text-white">
           {`It's Moonshot tokenomics!`}
         </h3>
       </div>
