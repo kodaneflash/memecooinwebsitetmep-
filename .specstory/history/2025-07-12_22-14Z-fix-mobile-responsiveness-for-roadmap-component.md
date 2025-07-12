@@ -524,7 +524,23 @@ I'll update the Open Graph image in the layout.js file to use `/jiat.png` instea
 
 ---
 
+<think><details><summary>Thought Process</summary>Perfect! I've successfully updated the Open Graph image reference in the layout.js file. The changes I made:
 
+1. Changed the OpenGraph image URL from `/hero.png` to `/jiat.png`
+2. Changed the Twitter card image from `/hero.png` to `/jiat.png`
+
+Both social media platforms (Facebook, Twitter, LinkedIn, etc.) will now use the `/jiat.png` image when the website is shared. The image path `/jiat.png` correctly references the file in the public folder as `public/jiat.png`.
+
+The user should now see the new jiat.png image when sharing the website on social media platforms.</details></think>
+
+---
+
+Perfect! I've updated the Open Graph image to use `/jiat.png` instead of `/hero.png`. The changes include:
+
+✅ **OpenGraph image**: Changed from `/hero.png` to `/jiat.png`
+✅ **Twitter card image**: Changed from `/hero.png` to `/jiat.png`
+
+Now when your website is shared on social media platforms (Facebook, Twitter, LinkedIn, Discord, etc.), it will display the `public/jiat.png` image instead of the previous hero image. The image will maintain the same dimensions (1200x630) which is optimal for social media sharing.
 
 ---
 
