@@ -1,16 +1,12 @@
 import React from "react";
 import Image from "next/image";
-import Socials from "./Socials";
 
 import { contractAddress } from "@/constants";
 
 const Footer = () => {
   return (
     <footer className="relative">
-      <div className="text-center font-stopbuck mt-16 pb-5 border-t border-gray-100 pt-8">
-        <div className="my-5 mb-10">
-          <Socials />
-        </div>
+      <div className="text-center font-stopbuck mt-16 pb-5 pt-8">
         <div>
           <p className="text-md/relaxed text-gray-500">
             © &nbsp; <span className="text-duis text-shadow">DUIS</span>{" "}
