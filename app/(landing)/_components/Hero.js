@@ -11,26 +11,45 @@ const Hero = () => {
   };
 
   return (
-    <div className="min-h-dvh flex items-center justify-center relative overflow-hidden">
+    <div className="min-h-dvh flex items-start justify-center relative overflow-hidden pt-32 sm:pt-48 lg:pt-56 xl:pt-64">
       {/* Background gradient overlay - more transparent to show space background */}
       <div className="absolute inset-0 bg-gradient-to-br from-black/40 via-gray-900/60 to-black/40"></div>
       
       {/* Main content */}
-      <div className="relative z-10 max-w-[85rem] mx-auto px-4 py-20 text-center">
+      <div className="relative z-10 max-w-[85rem] mx-auto px-4 py-8 sm:py-12 lg:py-16 text-center">
         {/* Main CTA */}
-        <h1 className="font-stopbuck text-6xl sm:text-7xl lg:text-8xl bg-gradient-to-r from-cosmic-pink via-cosmic-coral to-cosmic-cyan bg-clip-text text-transparent mb-10 leading-tight">
+        <h1 className="font-stopbuck text-5xl sm:text-6xl lg:text-7xl xl:text-8xl bg-gradient-to-r from-cosmic-pink via-cosmic-coral to-cosmic-cyan bg-clip-text text-transparent mb-8 sm:mb-10 leading-tight">
           Ready to join the jiggle-verse?
         </h1>
         
         {/* Subtitle */}
-        <p className="font-mono text-lg sm:text-xl lg:text-2xl text-gray-200 tracking-widest max-w-4xl mx-auto mb-16 leading-relaxed">
+        <p className="font-mono text-base sm:text-lg lg:text-xl xl:text-2xl text-gray-200 tracking-widest max-w-4xl mx-auto mb-6 sm:mb-8 leading-relaxed">
           Join the jiggle revolution—intergalactic booty-powered economics
         </p>
         
+        {/* Contract Address Section */}
+        <div className="flex justify-center mb-6 sm:mb-8">
+          <div className="bg-black rounded-2xl p-4 sm:p-6 border-4 border-dashed border-cosmic-cyan max-w-md w-full">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-cosmic-pink mb-3 sm:mb-4 font-stopbuck">
+              CONTRACT ADDRESS
+            </h2>
+            <div className="bg-white rounded-lg p-3 sm:p-4 font-mono text-base sm:text-lg text-black break-all flex items-center justify-between">
+              <span>Coming Soon</span>
+              <button 
+                onClick={handleCopyClick}
+                className="ml-3 text-cosmic-pink hover:text-cosmic-coral transition-colors duration-200 flex-shrink-0"
+                aria-label="Copy contract address"
+              >
+                <Copy className="w-4 h-4 sm:w-5 sm:h-5" />
+              </button>
+            </div>
+          </div>
+        </div>
+
         {/* Social icons - using existing styling */}
-        <div className="flex justify-center items-center gap-8 mb-12">
+        <div className="flex justify-center items-center gap-6 sm:gap-8 mb-6 sm:mb-8">
           <a href="https://t.me/jiatscommunity" target="_blank" rel="noopener noreferrer" className="group">
-            <div className="aspect-square text-lg sm:text-2xl md:text-4xl bg-[#3d332b] border-4 border-duis w-fit rounded-full p-2 sm:p-4 text-center text-white flex flex-col gap-5 group-hover:bg-duis group-hover:border-[#3d332b] group-hover:scale-125">
+            <div className="aspect-square text-base sm:text-lg md:text-2xl lg:text-4xl bg-[#3d332b] border-4 border-duis w-fit rounded-full p-2 sm:p-3 lg:p-4 text-center text-white flex flex-col gap-3 sm:gap-5 group-hover:bg-duis group-hover:border-[#3d332b] group-hover:scale-125">
               <div className="flex justify-center group-hover:text-[#3d332b]">
                 <Telegram />
               </div>
@@ -38,7 +57,7 @@ const Hero = () => {
           </a>
           
           <a href="https://x.com" target="_blank" rel="noopener noreferrer" className="group">
-            <div className="aspect-square text-lg sm:text-2xl md:text-4xl bg-[#3d332b] border-4 border-duis w-fit rounded-full p-2 sm:p-4 text-center text-white flex flex-col gap-5 group-hover:bg-duis group-hover:border-[#3d332b] group-hover:scale-125">
+            <div className="aspect-square text-base sm:text-lg md:text-2xl lg:text-4xl bg-[#3d332b] border-4 border-duis w-fit rounded-full p-2 sm:p-3 lg:p-4 text-center text-white flex flex-col gap-3 sm:gap-5 group-hover:bg-duis group-hover:border-[#3d332b] group-hover:scale-125">
               <div className="flex justify-center group-hover:text-[#3d332b]">
                 <X />
               </div>
@@ -46,27 +65,8 @@ const Hero = () => {
           </a>
         </div>
 
-        {/* Contract Address Section */}
-        <div className="flex justify-center mb-8">
-          <div className="bg-black rounded-2xl p-6 border-4 border-dashed border-cosmic-cyan max-w-md w-full">
-            <h2 className="text-4xl font-bold text-cosmic-pink mb-4 font-stopbuck">
-              CONTRACT ADDRESS
-            </h2>
-            <div className="bg-white rounded-lg p-4 font-mono text-lg text-black break-all flex items-center justify-between">
-              <span>Coming Soon</span>
-              <button 
-                onClick={handleCopyClick}
-                className="ml-3 text-cosmic-pink hover:text-cosmic-coral transition-colors duration-200 flex-shrink-0"
-                aria-label="Copy contract address"
-              >
-                <Copy className="w-5 h-5" />
-              </button>
-            </div>
-          </div>
-        </div>
-
         {/* Disclaimer */}
-        <p className="text-sm text-gray-400 font-mono max-w-lg mx-auto opacity-75">
+        <p className="text-xs sm:text-sm text-gray-400 font-mono max-w-lg mx-auto opacity-75">
           This website is still under heavy development. Everything is subject to change.
         </p>
       </div>
