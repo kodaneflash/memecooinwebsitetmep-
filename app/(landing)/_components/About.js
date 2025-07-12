@@ -27,7 +27,7 @@ const About = () => {
           <div className="p-4 h-full sm:p-6">
             <h3 className="font-mono text-lg sm:text-2xl text-gray-200 tracking-widest text-justify sm:text-left">
               <p className="indent-12">
-                In a distant corner of the galaxy, beyond the Milky Way, lies a secret cosmic phenomenon: <span className="text-3xl font-bold text-cosmic-pink">Planet Jiggletron</span>. This whimsical planet pulsates rhythmically through space, powered entirely by the infinite jiggling energy of its intergalactic inhabitants' rear ends.
+                In a distant corner of the galaxy, beyond the Milky Way, lies a secret cosmic phenomenon: <span className="text-3xl font-bold text-cosmic-pink">Planet Jiggletron</span>. This whimsical planet pulsates rhythmically through space, powered entirely by the infinite jiggling energy of its intergalactic inhabitants&apos; rear ends.
               </p>
               <p className="indent-12 mt-3">
                 To harness this endless, cheek-driven force, the <span className="italic font-bold text-cosmic-coral">Jiggly Intergalactic Ass Token</span> (<span className="italic font-bold text-cosmic-cyan">JIAT</span>) was born—bringing unstoppable energy, humor, and decentralized jiggle economics to the Solana galaxy.

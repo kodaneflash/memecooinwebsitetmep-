@@ -6,7 +6,7 @@ import Image from "next/image";
 const navigation = [
   { name: "About", href: "#about" },
   { name: "Exchanges", href: "#exchanges" },
-  { name: "Tokenomics", href: "#tokenomics" },
+  { name: "Jigglenomics", href: "#tokenomics" },
   { name: "How to buy", href: "#buy" },
   // { name: "Wall of love", href: "#love" },
 ];
@@ -65,11 +65,11 @@ const Nav = () => {
         {/* Buy Button */}
         <div className="lg:flex lg:flex-1 lg:justify-end">
           <a
-            href="https://dexscreener.com/solana/8j5r6kteet9cm6wamq2mwb2sneu97cz1jtksdg76moon"
+            href="https://dexscreener.com"
             target="_blank"
             className="transition duration-200 font-stopbuck text-lg sm:text-2xl rounded-xl px-3.5 py-2.5 font-medium bg-cosmic-gradient text-white shadow-2xl hover:bg-cosmic-gradient-reverse hover:text-white hover:outline-cosmic-cyan outline outline-2 outline-offset-0"
           >
-            Buy $JIATsr
+            Buy $JIAT
           </a>
         </div>
       </div>
