@@ -118,7 +118,7 @@ const Hero = () => {
         {/* Enhanced Call-to-Action Button */}
         <div className="mb-8">
           <button className="cosmic-button text-lg sm:text-xl lg:text-2xl px-8 py-4 font-stopbuck shadow-cosmic hover:shadow-neon-pink">
-            🚀 Launch into the Jiggle-verse
+           Launch into the Jiggleverse
           </button>
         </div>
 

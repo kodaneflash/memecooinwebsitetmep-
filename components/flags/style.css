@@ -3,7 +3,26 @@
   height: 85px;
   display: flex;
 
-  scale: 1.5;
+  scale: 1;
+}
+
+/* Responsive scaling for larger screens */
+@media (min-width: 640px) {
+  .flag {
+    scale: 1.2;
+  }
+}
+
+@media (min-width: 768px) {
+  .flag {
+    scale: 1.3;
+  }
+}
+
+@media (min-width: 1024px) {
+  .flag {
+    scale: 1.5;
+  }
 }
 
 .flag > .column {
