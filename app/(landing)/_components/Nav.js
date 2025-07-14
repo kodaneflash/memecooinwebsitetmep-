@@ -14,11 +14,17 @@ const navigation = [
 const Nav = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState('');
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
       setIsScrolled(scrollY > 50);
+      
+      // Close mobile menu on scroll
+      if (isMobileMenuOpen) {
+        setIsMobileMenuOpen(false);
+      }
       
       // Track active section
       const sections = navigation.map(item => item.href.substring(1));
@@ -36,15 +42,42 @@ const Nav = () => {
       }
     };
 
+    const handleClickOutside = (event) => {
+      // Close mobile menu when clicking outside
+      if (isMobileMenuOpen && !event.target.closest('nav')) {
+        setIsMobileMenuOpen(false);
+      }
+    };
+
+    const handleKeyDown = (event) => {
+      // Close mobile menu on Escape key
+      if (event.key === 'Escape' && isMobileMenuOpen) {
+        setIsMobileMenuOpen(false);
+      }
+    };
+
     window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+    document.addEventListener("click", handleClickOutside);
+    document.addEventListener("keydown", handleKeyDown);
+    
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      document.removeEventListener("click", handleClickOutside);
+      document.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [isMobileMenuOpen]);
 
   const handleNavClick = (href) => {
     const element = document.querySelector(href);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
+    // Close mobile menu after navigation
+    setIsMobileMenuOpen(false);
+  };
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
   return (
@@ -129,13 +162,74 @@ const Nav = () => {
           </a>
         </div>
 
-        {/* Mobile Menu Button (if needed later) */}
+        {/* Mobile Menu Button */}
         <div className="lg:hidden">
-          <button className="glass-button p-2 rounded-lg">
-            <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+          <button 
+            onClick={toggleMobileMenu}
+            className="glass-button p-2 rounded-lg transition-transform duration-200 hover:scale-105"
+            aria-label="Toggle mobile menu"
+          >
+            <svg 
+              className={`w-6 h-6 text-white transition-transform duration-300 ${
+                isMobileMenuOpen ? 'rotate-90' : 'rotate-0'
+              }`} 
+              fill="none" 
+              stroke="currentColor" 
+              viewBox="0 0 24 24"
+            >
+              {isMobileMenuOpen ? (
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              ) : (
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+              )}
             </svg>
           </button>
+        </div>
+      </div>
+
+      {/* Mobile Menu */}
+      <div className={`lg:hidden absolute top-full left-0 w-full bg-black/95 backdrop-blur-lg border-t border-white/10 transition-all duration-300 ease-in-out ${
+        isMobileMenuOpen 
+          ? 'opacity-100 visible translate-y-0' 
+          : 'opacity-0 invisible -translate-y-4'
+      }`}>
+        <div className="px-6 py-6 space-y-6">
+          {/* Mobile Navigation Links */}
+          {navigation.map((item) => {
+            const sectionId = item.href.substring(1);
+            const isActive = activeSection === sectionId;
+            
+            return (
+              <button
+                key={item.name}
+                onClick={() => handleNavClick(item.href)}
+                className={`block w-full text-left text-xl font-stopbuck font-bold tracking-wider transition-all duration-300 hover:text-cosmic-cyan hover:translate-x-2 ${
+                  isActive ? 'text-cosmic-cyan' : 'text-white'
+                }`}
+              >
+                <div className="relative">
+                  <span className="block py-2">{item.name}</span>
+                  <div className={`h-0.5 bg-cosmic-cyan transition-all duration-300 ${
+                    isActive ? 'w-8' : 'w-0 hover:w-8'
+                  }`}></div>
+                </div>
+              </button>
+            );
+          })}
+          
+          {/* Mobile Buy Button */}
+          <div className="pt-4 border-t border-white/20">
+            <a
+              href="https://dexscreener.com"
+              target="_blank"
+              className="block w-full text-center cosmic-button text-lg font-stopbuck px-6 py-4 transition-all duration-300 hover:scale-105"
+            >
+              <div className="relative">
+                <span className="relative z-10">Buy $JIAT</span>
+                <div className="absolute inset-0 bg-cosmic-gradient-animated opacity-80"></div>
+              </div>
+            </a>
+          </div>
         </div>
       </div>
       
