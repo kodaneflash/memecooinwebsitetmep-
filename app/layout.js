@@ -13,14 +13,14 @@ export const metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://jiat.io'), // Update with actual domain
+  metadataBase: new URL('https://jiat.fun'),
   alternates: {
     canonical: '/',
   },
   openGraph: {
     title: "JIAT - Jiggly Intergalactic Ass Token",
     description: "Join the jiggle revolution! JIAT brings cosmic jiggle power from Planet Jiggletron to Solana. Intergalactic booty-powered economics and decentralized jiggle energy.",
-    url: 'https://jiat.fun', // Update with actual domain
+    url: 'https://jiat.fun',
     siteName: 'JIAT - Jiggly Intergalactic Ass Token',
     images: [
       {
