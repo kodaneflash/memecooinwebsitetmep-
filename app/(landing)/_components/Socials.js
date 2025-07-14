@@ -12,11 +12,6 @@ const cards = [
     title: "x",
     icon: "X",
   },
-  {
-    link: "https://www.instagram.com",
-    title: "Instagram",
-    icon: "Instagram",
-  },
 ];
 
 const Socials = () => {

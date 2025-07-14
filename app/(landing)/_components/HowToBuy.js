@@ -10,7 +10,7 @@ const HowToBuy = () => {
           How To Buy
         </h2>
         <h3 className="font-stopbuck text-2xl text-center text-white">
-          {`Just 4️⃣ steps to get rich 🤑`}
+          {`Just 4️⃣  steps to get rich`}
         </h3>
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-36 justify-items-center">

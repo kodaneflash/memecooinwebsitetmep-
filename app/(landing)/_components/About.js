@@ -55,12 +55,11 @@ const About = () => {
             </h3>
           </div>
           
-          {/* Decorative elements */}
-          <div className="flex justify-center items-center gap-4 mb-8">
-            <div className="w-16 h-0.5 bg-cosmic-gradient"></div>
-            <span className="text-2xl animate-spin-slow">⭐</span>
-            <div className="w-16 h-0.5 bg-cosmic-gradient-reverse"></div>
-          </div>
+                     {/* Decorative elements */}
+           <div className="flex justify-center items-center gap-4 mb-8">
+             <div className="w-16 h-0.5 bg-cosmic-gradient"></div>
+             <div className="w-16 h-0.5 bg-cosmic-gradient-reverse"></div>
+           </div>
         </div>
 
         {/* Main Content Grid */}
@@ -118,18 +117,18 @@ const About = () => {
                 </p>
               </div>
               
-              {/* Enhanced call-to-action elements */}
-              <div className="mt-8 flex flex-wrap gap-4 justify-center sm:justify-start">
-                <div className="glass-button px-4 py-2 rounded-lg text-cosmic-cyan font-semibold border border-cosmic-cyan/30 hover:border-cosmic-cyan/60">
-                  🌌 Cosmic Energy
-                </div>
-                <div className="glass-button px-4 py-2 rounded-lg text-cosmic-coral font-semibold border border-cosmic-coral/30 hover:border-cosmic-coral/60">
-                  🍑 Jiggle Power
-                </div>
-                <div className="glass-button px-4 py-2 rounded-lg text-cosmic-pink font-semibold border border-cosmic-pink/30 hover:border-cosmic-pink/60">
-                  🚀 Decentralized
-                </div>
-              </div>
+                             {/* Enhanced call-to-action elements */}
+               <div className="mt-8 flex flex-wrap gap-4 justify-center sm:justify-start">
+                 <div className="glass-button px-4 py-2 rounded-lg text-cosmic-cyan font-semibold border border-cosmic-cyan/30 hover:border-cosmic-cyan/60">
+                   Cosmic Energy
+                 </div>
+                 <div className="glass-button px-4 py-2 rounded-lg text-cosmic-coral font-semibold border border-cosmic-coral/30 hover:border-cosmic-coral/60">
+                   Jiggle Power
+                 </div>
+                 <div className="glass-button px-4 py-2 rounded-lg text-cosmic-pink font-semibold border border-cosmic-pink/30 hover:border-cosmic-pink/60">
+                   Decentralized
+                 </div>
+               </div>
             </div>
           </div>
         </div>

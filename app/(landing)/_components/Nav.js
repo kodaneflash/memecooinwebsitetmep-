@@ -120,9 +120,8 @@ const Nav = () => {
             <div className="absolute inset-0 bg-cosmic-gradient-animated opacity-80 group-hover:opacity-100 transition-opacity duration-300"></div>
             
             {/* Button text */}
-            <span className="relative z-10 flex items-center gap-2">
-              <span>Buy $JIAT</span>
-              <span className="transform group-hover:translate-x-1 transition-transform duration-300">🚀</span>
+            <span className="relative z-10">
+              Buy $JIAT
             </span>
             
             {/* Shine effect */}

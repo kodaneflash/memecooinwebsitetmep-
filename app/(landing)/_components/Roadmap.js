@@ -5,42 +5,36 @@ const roadmapEvents = [
     phase: "Q1 2025",
     title: "The Great Awakening",
     description: "First Galactic Ass-Clap achieved!",
-    emoji: "🍑",
     completed: true,
   },
   {
     phase: "Q2 2025",
     title: "Booty Bounce Protocol",
     description: "Jiggle mechanics implemented across the multiverse",
-    emoji: "✨",
     completed: true,
   },
   {
     phase: "Q3 2025",
     title: "Twerk-to-Earn Launch",
     description: "Revolutionary staking rewards for premium jigglers",
-    emoji: "💎",
     completed: false,
   },
   {
     phase: "Q4 2025",
     title: "Galactic Expansion",
     description: "Cross-dimensional booty trading goes live",
-    emoji: "🚀",
     completed: false,
   },
   {
     phase: "Q1 2026",
     title: "The Ultimate Jiggle",
     description: "Achieve perfect cosmic harmony through synchronized twerking",
-    emoji: "🌌",
     completed: false,
   },
   {
     phase: "Q2 2026",
     title: "Booty Singularity",
     description: "When all universes converge into one magnificent jiggle",
-    emoji: "🌟",
     completed: false,
   },
 ];
@@ -94,7 +88,6 @@ const Roadmap = () => {
                   }`}
                 >
                   <div className="flex items-center justify-center sm:justify-start gap-3 mb-3">
-                    <span className="text-2xl sm:text-3xl">{event.emoji}</span>
                     <div className="text-center sm:text-left">
                       <h3 className={`font-stopbuck text-xl sm:text-2xl font-bold ${
                         event.completed 
@@ -151,11 +144,9 @@ const Roadmap = () => {
         {/* Bottom decoration */}
         <div className="mt-12 sm:mt-16 text-center w-full">
           <div className="inline-flex items-center gap-3 sm:gap-4 p-3 sm:p-4 bg-gradient-to-r from-cosmic-pink/20 to-cosmic-cyan/20 rounded-full border border-cosmic-coral/30 max-w-xs sm:max-w-none mx-auto">
-            <span className="text-xl sm:text-2xl">🌟</span>
             <span className="text-cosmic-coral font-semibold text-sm sm:text-base">
               The journey continues...
             </span>
-            <span className="text-xl sm:text-2xl">🌟</span>
           </div>
         </div>
       </div>
