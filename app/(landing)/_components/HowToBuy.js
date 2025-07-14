@@ -6,7 +6,7 @@ const HowToBuy = () => {
   return (
     <div id="buy" className="max-w-[85rem] mx-auto p-12">
       <div className="my-16">
-        <h2 className="font-stopbuck text-6xl bg-cosmic-gradient bg-clip-text text-transparent text-center">
+        <h2 className="font-stopbuck text-4xl sm:text-5xl lg:text-6xl bg-cosmic-gradient bg-clip-text text-transparent text-center">
           How To Buy
         </h2>
         <h3 className="font-stopbuck text-2xl text-center text-white">

@@ -32,10 +32,10 @@ const Hero = () => {
       {/* Enhanced Background with Grid Pattern */}
       <div className="absolute inset-0 bg-gradient-to-br from-black/40 via-gray-900/60 to-black/40 cosmic-grid"></div>
       
-      {/* Floating Orbs */}
-      <div className="absolute top-20 left-10 w-32 h-32 cosmic-orb animate-float opacity-30"></div>
-      <div className="absolute top-40 right-16 w-20 h-20 cosmic-orb animate-float opacity-20" style={{ animationDelay: '1s' }}></div>
-      <div className="absolute bottom-32 left-1/4 w-24 h-24 cosmic-orb animate-float opacity-25" style={{ animationDelay: '2s' }}></div>
+      {/* Floating Orbs - Made responsive to prevent overflow */}
+      <div className="absolute top-20 left-4 sm:left-10 w-16 sm:w-24 lg:w-32 h-16 sm:h-24 lg:h-32 cosmic-orb animate-float opacity-30"></div>
+      <div className="absolute top-40 right-8 sm:right-16 w-12 sm:w-16 lg:w-20 h-12 sm:h-16 lg:h-20 cosmic-orb animate-float opacity-20" style={{ animationDelay: '1s' }}></div>
+      <div className="absolute bottom-32 left-1/4 w-16 sm:w-20 lg:w-24 h-16 sm:h-20 lg:h-24 cosmic-orb animate-float opacity-25" style={{ animationDelay: '2s' }}></div>
       
       {/* Animated Particles */}
       {particles.map(particle => (
@@ -137,9 +137,9 @@ const Hero = () => {
         <div className="absolute bottom-1/4 left-1/3 w-2.5 h-2.5 bg-cosmic-coral rounded-full animate-pulse shadow-neon-coral" style={{ animationDelay: '2s' }}></div>
         <div className="absolute top-1/2 right-1/4 w-2 h-2 bg-cosmic-pink rounded-full animate-pulse shadow-neon-pink" style={{ animationDelay: '0.5s' }}></div>
         
-        {/* Morphing Shapes */}
-        <div className="absolute top-10 right-10 w-16 h-16 morphing-blob opacity-20 animate-morphing-border"></div>
-        <div className="absolute bottom-20 left-20 w-12 h-12 morphing-blob opacity-15 animate-morphing-border" style={{ animationDelay: '2s' }}></div>
+        {/* Morphing Shapes - Made responsive */}
+        <div className="absolute top-10 right-4 sm:right-10 w-8 sm:w-12 lg:w-16 h-8 sm:h-12 lg:h-16 morphing-blob opacity-20 animate-morphing-border"></div>
+        <div className="absolute bottom-20 left-8 sm:left-20 w-6 sm:w-8 lg:w-12 h-6 sm:h-8 lg:h-12 morphing-blob opacity-15 animate-morphing-border" style={{ animationDelay: '2s' }}></div>
       </div>
     </div>
   );

@@ -32,10 +32,10 @@ const About = () => {
 
   return (
     <div className="relative overflow-hidden">
-      {/* Background Effects */}
+      {/* Background Effects - Made responsive to prevent overflow */}
       <div className="absolute inset-0 cosmic-grid opacity-10"></div>
-      <div className="absolute top-20 left-10 w-64 h-64 cosmic-orb opacity-20 animate-float"></div>
-      <div className="absolute bottom-20 right-10 w-48 h-48 cosmic-orb opacity-15 animate-float" style={{ animationDelay: '1s' }}></div>
+      <div className="absolute top-20 left-4 sm:left-10 w-32 sm:w-48 lg:w-64 h-32 sm:h-48 lg:h-64 cosmic-orb opacity-20 animate-float"></div>
+      <div className="absolute bottom-20 right-4 sm:right-10 w-24 sm:w-36 lg:w-48 h-24 sm:h-36 lg:h-48 cosmic-orb opacity-15 animate-float" style={{ animationDelay: '1s' }}></div>
       
       <div 
         ref={sectionRef}
@@ -79,11 +79,11 @@ const About = () => {
                 alt="JIAT Planet Jiggletron"
               />
               
-              {/* Floating particles around image */}
-              <div className="absolute -top-4 -left-4 w-4 h-4 bg-cosmic-pink rounded-full animate-bounce opacity-70"></div>
-              <div className="absolute -top-2 -right-6 w-3 h-3 bg-cosmic-cyan rounded-full animate-bounce opacity-60" style={{ animationDelay: '0.5s' }}></div>
-              <div className="absolute -bottom-4 -right-4 w-5 h-5 bg-cosmic-coral rounded-full animate-bounce opacity-80" style={{ animationDelay: '1s' }}></div>
-              <div className="absolute -bottom-2 -left-6 w-2 h-2 bg-cosmic-pink rounded-full animate-bounce opacity-50" style={{ animationDelay: '1.5s' }}></div>
+              {/* Floating particles around image - Made mobile-safe */}
+              <div className="absolute -top-2 sm:-top-4 -left-2 sm:-left-4 w-3 sm:w-4 h-3 sm:h-4 bg-cosmic-pink rounded-full animate-bounce opacity-70"></div>
+              <div className="absolute -top-1 sm:-top-2 -right-3 sm:-right-6 w-2 sm:w-3 h-2 sm:h-3 bg-cosmic-cyan rounded-full animate-bounce opacity-60" style={{ animationDelay: '0.5s' }}></div>
+              <div className="absolute -bottom-2 sm:-bottom-4 -right-2 sm:-right-4 w-3 sm:w-5 h-3 sm:h-5 bg-cosmic-coral rounded-full animate-bounce opacity-80" style={{ animationDelay: '1s' }}></div>
+              <div className="absolute -bottom-1 sm:-bottom-2 -left-3 sm:-left-6 w-2 h-2 bg-cosmic-pink rounded-full animate-bounce opacity-50" style={{ animationDelay: '1.5s' }}></div>
             </div>
           </div>
 

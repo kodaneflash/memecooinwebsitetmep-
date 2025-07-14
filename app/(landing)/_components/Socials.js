@@ -18,7 +18,7 @@ const Socials = () => {
   return (
     <div>
       <div className="my-16">
-        <h2 className="font-stopbuck text-6xl text-duis text-shadow text-center">
+        <h2 className="font-stopbuck text-4xl sm:text-5xl lg:text-6xl text-duis text-shadow text-center">
           The Jiggleverse
         </h2>
       </div>
