@@ -38,7 +38,7 @@ export const metadata = {
     title: "JIAT - Jiggly Intergalactic Ass Token",
     description: "Join the jiggle revolution! JIAT brings cosmic jiggle power from Planet Jiggletron to Solana.",
     images: ['/jiat.png'],
-    creator: '@jiatscommunity', // Update with actual Twitter handle
+    creator: '@jiatonsolana', // Updated Twitter handle
   },
   robots: {
     index: true,

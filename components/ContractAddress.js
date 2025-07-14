@@ -13,7 +13,7 @@ const ContractAddress = () => {
     <div className="text-center p-8">
       <div className="mb-8 flex justify-center">
         <div className="bg-black rounded-2xl p-8 border-4 border-dashed border-cosmic-cyan">
-          <h2 className="text-4xl font-bold text-cosmic-pink mb-4 font-stopbuck">
+          <h2 className="text-4xl font-stopbuck text-duis text-shadow text-center mb-4">
             CONTRACT ADDRESS
           </h2>
           <div className="bg-white rounded-lg p-4 font-mono text-lg text-black break-all">

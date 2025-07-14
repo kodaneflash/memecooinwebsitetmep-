@@ -8,7 +8,7 @@ const cards = [
     icon: "Telegram",
   },
   {
-    link: "https://x.com",
+    link: "https://x.com/jiatonsolana",
     title: "x",
     icon: "X",
   },
